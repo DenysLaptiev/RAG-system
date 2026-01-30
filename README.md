@@ -23,18 +23,19 @@ The project demonstrates how to:
 ---
 
 ## Project Structure
+
+```text
 .
 ├── scripts/
-│ ├── api.py # Loads OpenAI API key from environment variables
-│ ├── rag_data.py # Downloads data, splits it, creates and persists Chroma DB
-│ ├── query_rag.py # Runs a sample RAG query against the stored data
+│   ├── api.py          # Loads OpenAI API key from environment variables
+│   ├── rag_data.py     # Downloads data, splits it, creates and persists Chroma DB
+│   └── query_rag.py    # Runs a sample RAG query against the stored data
 ├── requirements.txt
 ├── .env.example
 ├── .gitignore
-├── README.md
-
-
+└── README.md
 ---
+```
 
 ## How It Works
 

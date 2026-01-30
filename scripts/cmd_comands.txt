@@ -1,0 +1,22 @@
+---------------------initial setup
+
+//create virtual environment
+python3 -m venv venv
+
+//activate virtual environment
+source venv/bin/activate
+
+//import libs for RAG into venv
+pip3 install langchain-community langchain-text-splitters langchain-chroma langchain-openai
+
+//import libs for web into venv
+pip3 install beautifulsoup4
+
+
+
+-------------------run
+//create DB
+python3 ./scripts/rag_data.py
+
+//run dialog of mock user with llm
+python3 ./scripts/query_rag.py
